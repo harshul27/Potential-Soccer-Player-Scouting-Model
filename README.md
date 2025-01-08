@@ -29,3 +29,38 @@ The project utilizes the [Soccer Players Statistics Dataset](https://www.kaggle.
    ```bash
    git clone https://github.com/your-repo/potential-player-tool.git
    cd potential-player-tool
+
+## Running the Tool
+1. **Load the dataset** (`soccer_players_stats.csv`).
+2. **Open the Jupyter Notebook** `Potential Player Identification Tool.ipynb` in your preferred environment.
+3. **Follow the instructions in the notebook**:
+   - Input your preferences for player attributes, age, position, and mindset.
+   - Run the cells to process data, generate results, and visualize insights.
+4. **View recommended players** and analyze their scores through intuitive visualizations.
+
+---
+
+## Project Workflow
+
+### 1. Data Preprocessing
+- Handle missing values by dropping or filling with appropriate measures.
+- Standardize features using `StandardScaler` for consistent scaling.
+
+### 2. Model Implementation
+- **Random Forest Classifier**: Predicts player mindset categories.
+- **K-Means Clustering**: Groups players with similar attributes.
+
+### 3. User Interaction
+- Collect user-defined weights for skill categories and filtering criteria.
+
+### 4. Output Generation
+- Display the top 5 recommended players based on the weighted scoring system.
+- Generate visualizations for insights into player attributes and rankings.
+
+---
+
+## Results
+- Achieved **85% testing accuracy** for mindset classification using Random Forest.
+- Demonstrated robust generalization in K-Means regression with low Mean Squared Error values.
+- Delivered actionable recommendations through personalized scoring and insightful visualizations.
+
